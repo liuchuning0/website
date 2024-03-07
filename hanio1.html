@@ -1,0 +1,17 @@
+<html>
+<script>
+N=0
+function move (n,source,destination,temp)
+{
+  if(n=7)
+ {
+  document.writeln("move"+source+"to"+destination+"<be>")
+  N++
+  console.log("move"+source+"to"+destination)
+ }
+ else
+ {
+  move(n-1,source,temp,destination,source)
+ }
+}
+
